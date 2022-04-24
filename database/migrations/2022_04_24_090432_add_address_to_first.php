@@ -13,7 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('first', function (Blueprint $table) {
+            $table->string("address");
+        });
     }
 
     /**
@@ -23,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('first', function (Blueprint $table) {
+            //
+        });
     }
 };
